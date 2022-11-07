@@ -1,22 +1,33 @@
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  FlatList,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpaciy,
+  View,
+} from 'react-native'
 
-import { StatusBar } from 'expo-status-bar';
+import ShopingList from "./components/ShopingList/ShopingList"
 
 export default function App() {
   return (
+    <>
     <View style={styles.container}>
       <Text>Hola Coder!!</Text>
       <Text>Esta es mi App TinPet</Text>
-      <StatusBar style="auto" />
     </View>
-  );
+    <ShopingList/>
+    </>
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    display: "flex",
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
+    height: "auto",
+    marginTop: 25,
   },
-});
+})
