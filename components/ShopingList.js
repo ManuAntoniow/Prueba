@@ -7,7 +7,7 @@ import {
   View,
 } from "react-native";
 
-import Modal from "../Modal/Modal"
+import Modal from "./Modal"
 import { useState } from "react"
 
 export default function ShopingList() {
